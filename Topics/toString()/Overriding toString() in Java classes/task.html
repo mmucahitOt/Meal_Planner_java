@@ -1,0 +1,18 @@
+<h2>Overriding toString() in Java classes</h2>
+<div class="step-text">
+<div class="alert alert-warning">Hey there! This problem might be a bit unpredictable, but give it a go and let us know how you do!</div>Consider the code snippet below where we have a base class 'Vehicle' and a derived class 'Car'. How should you properly override the toString() method in the 'Car' class to add the 'numberOfDoors' info to the original output from the Vehicle's 'toString' method?<br/><pre class="java"><code class="java">public class Vehicle {
+  private String color;
+  public Vehicle(String color) { this.color = color; }
+  public String toString() { return "Vehicle color: " + color; }
+}
+
+public class Car extends Vehicle {
+  private int numberOfDoors;
+  public Car(String color, int numberOfDoors) {
+    super(color);
+    this.numberOfDoors = numberOfDoors;
+  }
+  // ... Add toString method here
+}
+</code></pre>
+</div>
